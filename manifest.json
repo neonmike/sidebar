@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "AI工具集合",
+  "version": "1.0.0",
+  "description": "集合多个AI工具的Chrome侧边栏插件",
+  "side_panel": {
+    "default_path": "sidebar.html"
+  },
+  "permissions": [
+    "sidePanel"
+  ],
+  "action": {
+    "default_title": "打开AI工具侧边栏",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

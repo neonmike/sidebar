@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI工具集合</title>
+  <link rel="stylesheet" href="sidebar.css">
+</head>
+
+<body>
+  <div class="sidebar-panel">
+    <div class="tools-section" id="toolsSection">
+      <header>
+        <h1>🤖 AI工具集合</h1>
+        <p class="subtitle">点击任意工具在侧边栏中使用</p>
+      </header>
+
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="搜索AI工具...">
+      </div>
+
+      <div class="ai-list" id="aiList">
+        <div class="ai-item" data-url="https://chat.openai.com" data-name="ChatGPT">
+          <div class="ai-icon">🟢</div>
+          <div class="ai-info">
+            <h3>ChatGPT</h3>
+            <p>OpenAI的对话AI助手</p>
+          </div>
+        </div>
+
+        <div class="ai-item" data-url="https://claude.ai" data-name="Claude">
+          <div class="ai-icon">🟣</div>
+          <div class="ai-info">
+            <h3>Claude</h3>
+            <p>Anthropic的AI助手</p>
+          </div>
+        </div>
+        <div class="ai-item" data-url="https://tongyi.aliyun.com" data-name="通义千问">
+          <div class="ai-icon">💙</div>
+          <div class="ai-info">
+            <h3>通义千问</h3>
+            <p>阿里云的AI助手</p>
+          </div>
+        </div>
+        <div class="ai-item" data-url="https://gemini.google.com" data-name="Gemini">
+          <div class="ai-icon">🔵</div>
+          <div class="ai-info">
+            <h3>Gemini</h3>
+            <p>Google的AI助手</p>
+          </div>
+        </div>
+
+        <div class="ai-item" data-url="https://www.bing.com/chat" data-name="Bing Chat">
+          <div class="ai-icon">🟡</div>
+          <div class="ai-info">
+            <h3>Bing Chat</h3>
+            <p>Microsoft的AI聊天</p>
+          </div>
+        </div>
+
+        <div class="ai-item" data-url="https://poe.com" data-name="Poe">
+          <div class="ai-icon">🔴</div>
+          <div class="ai-info">
+            <h3>Poe</h3>
+            <p>多AI模型聚合平台</p>
+          </div>
+        </div>
+
+        <div class="ai-item" data-url="https://www.perplexity.ai" data-name="Perplexity">
+          <div class="ai-icon">🟠</div>
+          <div class="ai-info">
+            <h3>Perplexity</h3>
+            <p>AI搜索引擎</p>
+          </div>
+        </div>
+        <div class="ai-item" data-url="https://yiyan.baidu.com" data-name="文心一言">
+          <div class="ai-icon">💜</div>
+          <div class="ai-info">
+            <h3>文心一言</h3>
+            <p>百度的AI助手</p>
+          </div>
+        </div>
+
+        <div class="ai-item" data-url="https://xinghuo.xfyun.cn" data-name="讯飞星火">
+          <div class="ai-icon">⭐</div>
+          <div class="ai-info">
+            <h3>讯飞星火</h3>
+            <p>科大讯飞的AI助手</p>
+          </div>
+        </div>
+
+        <div class="ai-item" data-url="https://kimi.moonshot.cn" data-name="Kimi">
+          <div class="ai-icon">🌙</div>
+          <div class="ai-info">
+            <h3>Kimi</h3>
+            <p>月之暗面的AI助手</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="back-button-container" id="backButtonContainer" style="display: none;">
+        <button class="back-button" id="backButton">← 返回工具列表</button>
+      </div>
+    </div>
+
+    <div class="iframe-section" id="iframeSection" style="display: none;">
+      <div class="iframe-header">
+        <button class="back-btn" id="iframeBackButton">← 返回</button>
+        <span class="current-tool-name" id="currentToolName"></span>
+        <button class="refresh-btn" id="refreshButton">🔄</button>
+      </div>
+      <iframe id="aiFrame" frameborder="0"></iframe>
+    </div>
+  </div>
+
+  <script src="sidebar.js"></script>
+</body>
+
+</html>
