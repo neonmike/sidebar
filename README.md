@@ -99,6 +99,7 @@ sidebar/
 3. **刷新功能**：重新加载当前iframe中的AI工具页面
 4. **搜索过滤**：实时过滤显示匹配的AI工具
 5. **动画交互**：鼠标悬停的平滑动画效果
+<img width="425" height="1214" alt="image" src="https://github.com/user-attachments/assets/a7323654-55e5-4565-bb59-41561c464898" />
 
 ## 自定义修改
 
